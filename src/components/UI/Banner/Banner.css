@@ -1,0 +1,34 @@
+.Banner {
+    height: 100vh;
+    background-color: transparent;
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.BannerText {
+    display: table-cell;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.BannerText h1 {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.BannerText p {
+    background-color: transparent;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.BannerOverlay {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
