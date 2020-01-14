@@ -1,7 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 
 const logo = props => (
-    <a className={props.logoClass} href={props.logoHref}>{props.logoText}</a>
+    <NavLink className={props.logoClass} to={props.logoHref}>{props.logoText}</NavLink>
 );
 
 export default logo;

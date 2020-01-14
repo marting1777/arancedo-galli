@@ -67,6 +67,7 @@ class Home extends Component {
                     </div>
                 </section>
                 <section className="ServiciosHome">
+                    <Title titleClass={"QuienesSomosTitle"} titleText="- Nuestros Servicios -"/>
                     {serviciosCards}
                 </section>
             </Aux>
