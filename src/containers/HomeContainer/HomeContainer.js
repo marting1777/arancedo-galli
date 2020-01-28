@@ -10,8 +10,10 @@ class HomeContainer extends Component {
         return (
             <section className="HomeContainer">
                 <Banner backgroundUrl={HomeBackgroundImage}>
-                    <Title title="Arancedo - Galli"/>
-                    <p>Abogados y Consultores</p>
+                    <div className="AlineadoVertical">
+                        <Title titleClass="Title" title="Arancedo - Galli"/>
+                        <p className="ParrafoSubtitulo">Abogados y Consultores</p>
+                    </div>
                 </Banner>
             </section>
         );
