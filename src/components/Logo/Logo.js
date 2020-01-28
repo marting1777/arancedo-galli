@@ -1,8 +1,8 @@
 import React from 'react';
 import './Logo.scss';
 
-const logo = () => (
-    <div className="Logo">
+const logo = props => (
+    <div className={props.logoClass}>
         <p>ARANCEDO - GALLI</p>
     </div>
 );

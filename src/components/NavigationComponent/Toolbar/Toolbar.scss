@@ -1,9 +1,10 @@
 header.Toolbar {
     width: 100%;
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000000;
+    background-color: #0b0e17;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +23,8 @@ header.Toolbar {
 
 @media (max-width: 768px) {
     header.Toolbar {
+        height: 70px;
+
         .DesktopOnly {
             display: none;
         }

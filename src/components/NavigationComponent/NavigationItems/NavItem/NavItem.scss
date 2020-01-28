@@ -4,7 +4,7 @@
     width: 100%;
 
     a {
-        color: #8F5C2C;
+        color: #5a0d15;
         text-decoration: none;
         width: 100%;
         display: block;
@@ -24,17 +24,16 @@
         height: 100%;
         width: auto;
         align-items: center;
+        font-size: 18px;
         a {
             color: #FFFFFF;
-            height: 100%;
-            padding: 16px 10px;
+            padding: 16px 25px;
             border-bottom: 4px solid transparent;
         }
     
         a:hover,
         a:active,
         a.active {
-            background-color: #8F5C2C;
             border-bottom: 4px solid #40A4C8;
             color: #FFFFFF;
         }

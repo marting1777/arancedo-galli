@@ -1,6 +1,13 @@
 .Logo {
     padding: 8px;
-    height: 100%;
     color: #ffffff;
     font-size: 30px;
+}
+
+@media (min-width: 1024px) {
+    .Logo {
+        padding: 8px;
+        color: #ffffff;
+        font-size: 36px;
+    }
 }
