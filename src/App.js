@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './App.scss';
+import './flaticon.css';
+import './App.css';
 
 import Layout from './HOC/Layout/Layout';
 import Home from './containers/Home/Home';
