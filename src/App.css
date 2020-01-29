@@ -36,8 +36,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+ }
   
   *,
   *::before,
@@ -46,7 +45,6 @@
     box-sizing: border-box; }
   
   html {
-    font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -56,7 +54,6 @@
   
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -158,7 +155,6 @@
   code,
   kbd,
   samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em; }
   
   pre {
@@ -4754,7 +4750,6 @@
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -4839,7 +4834,6 @@
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -7757,9 +7751,6 @@
     .mx-xl-auto {
       margin-left: auto !important; } }
   
-  .text-monospace {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-  
   .text-justify {
     text-align: justify !important; }
   
@@ -7985,7 +7976,6 @@
       border-color: #dee2e6; } }
   
   body {
-    font-family: "Poppins", Arial, sans-serif;
     background: #fff;
     font-size: 16px;
     line-height: 1.8;
@@ -8011,8 +8001,7 @@
   .h1, .h2, .h3, .h4, .h5 {
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.8);
-    font-weight: 400;
-    font-family: "Lora", serif; }
+    font-weight: 400; }
   
   .text-primary {
     color: #eac15a !important; }
@@ -8183,8 +8172,7 @@
   
   .navbar-brand {
     font-weight: 700;
-    font-size: 20px;
-    font-family: "Lora", serif; }
+    font-size: 20px;}
   
   .hero-wrap {
     width: 100%;
@@ -8229,8 +8217,7 @@
     line-height: 1.5;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.8);
-    color: #eac15a;
-    font-family: "Lora", serif; }
+    color: #eac15a;}
     .slider-text p strong {
       font-weight: 700; }
       .slider-text p strong a {
@@ -8246,7 +8233,6 @@
     font-weight: 400;
     margin-bottom: 20px;
     z-index: 99;
-    font-family: "Lora", serif;
     font-style: italic; }
     .slider-text .breadcrumbs span {
       color: rgba(255, 255, 255, 0.5); }
@@ -8496,8 +8482,7 @@
         background: #16181d; }
       .ftco-consultation .half.img .desc h1 a span {
         display: block;
-        font-size: 16px;
-        font-family: "Poppins", Arial, sans-serif; }
+        font-size: 16px;}
       .ftco-consultation .half.img .desc .icon span {
         font-size: 50px;
         color: #eac15a; }
@@ -8749,8 +8734,7 @@
   .heading-section .subheading {
     font-size: 18px;
     display: block;
-    margin-bottom: 5px;
-    font-family: "Lora", serif; }
+    margin-bottom: 5px; }
   
   .heading-section h2 {
     font-size: 40px;
@@ -8807,7 +8791,8 @@
       font-weight: 400;
       font-size: 18px;
       margin-bottom: 0;
-      color: #eac15a; }
+      color: #eac15a;
+     }
     .testimony-wrap .position {
       font-size: 16px;
       color: #b3b3b3; }
@@ -8951,7 +8936,7 @@
     font-weight: 600;
     font-size: 28px;
     color: #000000;
-    font-family: "Lora", serif; }
+     }
   
   .ftco-counter .text span {
     display: block;
@@ -9494,12 +9479,11 @@
           max-width: 100%; }
       .block-2 .author .name {
         color: #000000;
-        font-family: "Lora", serif; }
+         }
       .block-2 .author .position {
         display: block;
         color: #ccc;
-        font-size: 13px;
-        font-family: "Poppins", Arial, sans-serif; }
+        font-size: 13px; }
     @media (max-width: 991.98px) {
       .block-2 .back {
         -webkit-transform: rotateY(0deg);
