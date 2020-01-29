@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.scss';
 
 import Layout from './HOC/Layout/Layout';
-import HomeContainer from './containers/HomeContainer/HomeContainer';
+import Home from './containers/Home/Home';
 
 class App extends Component {
     render() {
@@ -11,11 +13,7 @@ class App extends Component {
             <div className="App">
                 <Layout>
                     <Switch>
-                        {/* <Route path="/checkout" component={asyncCheckout}/>
-                        <Route path="/checkout" component={asyncCheckout}/>
-                        <Route path="/checkout" component={asyncCheckout}/>
-                        <Route path="/checkout" component={asyncCheckout}/> */}
-                        <Route path="/" exact component={HomeContainer}/>
+                        <Route path="/" exact component={Home}/>
                     </Switch>
                 </Layout>
             </div>
