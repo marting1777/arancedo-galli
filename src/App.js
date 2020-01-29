@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './flaticon.css';
+import './iconmoon.css';
 import './App.css';
 
 import Layout from './HOC/Layout/Layout';

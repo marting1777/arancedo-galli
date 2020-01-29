@@ -11,9 +11,9 @@ const footer = props => (
                         <h2 className="ftco-heading-2">Arancedo - Galli</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                         <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li className="ftco-animate"><a href="#"><span className="icon-twitter"></span></a></li>
-                            <li className="ftco-animate"><a href="#"><span className="icon-facebook"></span></a></li>
-                            <li className="ftco-animate"><a href="#"><span className="icon-instagram"></span></a></li>
+                            <li className="ftco-animated"><a href="#"><span className="icon-twitter"></span></a></li>
+                            <li className="ftco-animated"><a href="#"><span className="icon-facebook"></span></a></li>
+                            <li className="ftco-animated"><a href="#"><span className="icon-instagram"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const footer = props => (
                         <h2 className="ftco-heading-2">Horarios Laborales</h2>
                         <div className="opening-hours">
                             <p className="pl-3">
-                                <span>Lunes – Viernes : 9am to 20 pm</span>
+                                <span>Lunes – Viernes <br/>9 am - 20 pm</span>
                             </p>
                         </div>
                     </div>
