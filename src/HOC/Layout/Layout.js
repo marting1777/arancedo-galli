@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Layout.scss';
 import Toolbar from '../../components/NavigationComponent/Toolbar/Toolbar';
 import SideDrawer from '../../components/NavigationComponent/SideDrawer/SideDrawer';
+import Footer from '../../components/Footer/Footer';
 
 
 class Layout extends Component {
@@ -31,6 +32,7 @@ class Layout extends Component {
                 <main className="Content">
                     {this.props.children} 
                 </main>
+                <Footer />
             </>
         );
     };

@@ -5,6 +5,8 @@ import ServiceCard from '../../components/UI/ServiceCard/ServiceCard';
 import PracticeArea from '../../components/UI/PracticeArea/PracticeArea';
 import LawyerCard from '../../components/UI/LawyerCard/LawyerCard';
 import Form from '../../components/UI/Form/Form';
+import GridImages from '../../components/UI/GridImages/GridImages';
+import Newsletter from '../../components/Newsletter/Newsletter';
 
 import GilbertoGalli from '../../assets/images/derecho-civil.jpg'; 
 import PabloArancedo from '../../assets/images/derecho-comercial.jpg'; 
@@ -37,6 +39,12 @@ class Home extends Component {
                 {id: 11, name: 'Martin Pereda', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', imageUrl: MartinPereda},
                 {id: 12, name: 'Liza Parreta', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', imageUrl: LizaParreta},
             ],
+            gridOfImages: [
+                {id: 13, imageUrl: GilbertoGalli},
+                {id: 14, imageUrl: PabloArancedo},
+                {id: 15, imageUrl: MartinPereda},
+                {id: 16, imageUrl: LizaParreta},
+            ],
         }
     }
 
@@ -64,6 +72,12 @@ class Home extends Component {
                 imageLawyer={card.imageUrl}
                 lawyerDescription={card.description}/>
         ));
+
+        const gridImagesBottom = this.state.content.gridOfImages.map(img => (
+            <GridImages
+                key={img.id} 
+                backgroundUrl={img.imageUrl}/>
+        ))
 
         return (
             <>
@@ -100,6 +114,14 @@ class Home extends Component {
                     </div>
                 </section>
                 <Form />
+                <section className="ftco-gallery">
+                    <div className="container-wrap">
+                        <div className="row no-gutters">
+                            {gridImagesBottom}
+                        </div>
+                    </div>
+                </section>
+                <Newsletter />
             </>
         );
     };
