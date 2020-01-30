@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroBanner.scss';
 import BannerBackground from '../../../assets/images/shake_hands.jpg';
+import { NavLink } from 'react-router-dom';
 
 const heroBanner = props => (
     <div className="hero-wrap js-fullheight" style={{backgroundImage: `url(${BannerBackground})`}} data-stellar-background-ratio="0.5">
@@ -12,7 +13,7 @@ const heroBanner = props => (
                     <h1 className="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                         <span>Experiencia</span> . <span>Innovación</span> . <span>Excelencia</span>
                     </h1>
-                    <p><a href="#" style={{background: 'rgb(102, 0, 0)'}} className="btn btn-primary py-3 px-4">Contactános</a></p>
+                    <p><NavLink to="/contacto" style={{background: 'rgb(102, 0, 0)'}} className="btn btn-primary py-3 px-4">Contactános</NavLink></p>
                 </div>
             </div>
         </div>

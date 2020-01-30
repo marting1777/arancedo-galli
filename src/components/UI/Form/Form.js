@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from '../../../assets/images/bg_1.jpg';
+import { NavLink } from 'react-router-dom';
 
 const form = props => (
     <section className="ftco-consultation">
@@ -9,7 +10,7 @@ const form = props => (
     				<div className="overlay"></div>
     				<div className="desc text-center">
     					<div className="icon"><span style={{color: '#f85b0a'}} className="flaticon-auction"></span></div>
-    					<h1><a href="/">Arancedo - Galli</a></h1>
+    					<h1><NavLink to="/">Arancedo - Galli</NavLink></h1>
     				</div>
     			</div>
     			<div className="half p-3 p-md-5 ftco-animated">
