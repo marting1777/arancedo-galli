@@ -8,7 +8,7 @@ const form = props => (
     			<div className="half d-flex justify-content-center align-items-center img" style={{backgroundImage: `url(${Image})`}}>
     				<div className="overlay"></div>
     				<div className="desc text-center">
-    					<div className="icon"><span className="flaticon-auction"></span></div>
+    					<div className="icon"><span style={{color: '#f85b0a'}} className="flaticon-auction"></span></div>
     					<h1><a href="/">Arancedo - Galli</a></h1>
     				</div>
     			</div>

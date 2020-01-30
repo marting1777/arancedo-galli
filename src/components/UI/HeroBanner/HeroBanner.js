@@ -12,7 +12,7 @@ const heroBanner = props => (
                     <h1 className="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                         <span>Experiencia</span> . <span>Innovación</span> . <span>Excelencia</span>
                     </h1>
-                    <p><a href="#" className="btn btn-primary py-3 px-4">Contactános</a></p>
+                    <p><a href="#" style={{background: 'rgb(102, 0, 0)'}} className="btn btn-primary py-3 px-4">Contactános</a></p>
                 </div>
             </div>
         </div>
