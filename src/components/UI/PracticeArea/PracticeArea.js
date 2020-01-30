@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const practiceArea = props => (
     <div className="col-md-3 col-lg-4 text-center">
@@ -6,7 +7,7 @@ const practiceArea = props => (
             <div className="icon d-flex justify-content-center align-items-center">
                 <span className={props.icon}></span>
             </div>
-            <h3><a href="#">{props.practiceArea}</a></h3>
+            <h3><NavLink to="/services">{props.practiceArea}</NavLink></h3>
         </div>
     </div>
 );

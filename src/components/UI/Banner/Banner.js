@@ -1,0 +1,18 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+const banner = props => (
+    <section className="hero-wrap hero-wrap-2" style={{backgroundImage: `url(${props.backgroundBanner})`}} data-stellar-background-ratio="0.5">
+        <div className="overlay"></div>
+        <div className="container">
+            <div className="row no-gutters slider-text align-items-end justify-content-center">
+                <div className="col-md-9 ftco-animated pb-5 text-center">
+                    <h1 className="mb-3 bread">{props.bannerTitle}</h1>
+                    <p className="breadcrumbs"><span className="mr-2"><NavLink to="/">Home <i className="ion-ios-arrow-forward"></i></NavLink></span> <span>{props.bannerTitle} <i className="ion-ios-arrow-forward"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+export default banner;
