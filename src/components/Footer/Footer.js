@@ -10,7 +10,7 @@ const footer = props => (
                 <div className="col-md">
                     <div className="ftco-footer-widget mb-4">
                         <h2 className="ftco-heading-2">Arancedo - Galli</h2>
-                        <p>Arancedo-Galli Abogados es una firma enfocada en asuntos internacionales y domésticos.</p>
+                        <p>Arancedo - Galli abogados es una firma enfocada en asuntos internacionales y domésticos.</p>
                         <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <li className="ftco-animated"><NavLink to="/"><span className="icon-twitter"></span></NavLink></li>
                             <li className="ftco-animated"><NavLink to="/"><span className="icon-facebook"></span></NavLink></li>
@@ -42,7 +42,7 @@ const footer = props => (
                 </div>
                 <div className="col-md">
                     <div className="ftco-footer-widget mb-4">
-                        <h2 className="ftco-heading-2">Alguna Pregutna?</h2>
+                        <h2 className="ftco-heading-2">Alguna Pregunta?</h2>
                         <div className="block-23 mb-3">
                         <ul>
                             <li><span className="icon icon-map-marker"></span><span className="text">Marcelo T. de Alvear 636 piso 9°</span></li>

@@ -7,7 +7,7 @@ const practiceArea = props => (
             <div className="icon d-flex justify-content-center align-items-center">
                 <span className={props.icon}></span>
             </div>
-            <h3><NavLink to="/services">{props.practiceArea}</NavLink></h3>
+            <h3><NavLink to="/servicios">{props.practiceArea}</NavLink></h3>
         </div>
     </div>
 );
