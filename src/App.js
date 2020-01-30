@@ -10,6 +10,7 @@ import Layout from './HOC/Layout/Layout';
 import Home from './containers/Home/Home';
 import QuienesSomos from './containers/QuienesSomos/QuienesSomos';
 import Services from './containers/Services/Services';
+import Profesionales from './containers/Profesionales/Profesionales';
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <div className="App">
                 <Layout>
                     <Switch>
+                        <Route path="/profesionales" exact component={Profesionales}/>
                         <Route path="/servicios" exact component={Services}/>
                         <Route path="/quienes-somos" exact component={QuienesSomos}/>
                         <Route path="/" exact component={Home}/>
