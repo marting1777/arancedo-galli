@@ -10,15 +10,59 @@ const navLinks = [
     {id: 5, name: 'CONTACTO', url: '/contacto'},
 ];
 
-const navigationItems = props => (
-    <ul className="NavigationItems">
-        {navLinks.map(item => (
-            <NavItem 
-                key={item.id}
-                link={item.url} 
-                exact>{item.name}</NavItem>
-        ))}
-    </ul>
-);
+const navLinksIt = [
+    {id: 1, name: 'HOME', url: '/'},
+    {id: 2, name: 'CHI SIAMO', url: '/chi-siamo'},
+    {id: 3, name: 'SERVIZI', url: '/servizi'},
+    {id: 4, name: 'I PROFESSIONISTI', url: '/i-professionisti'},
+    {id: 5, name: 'CONTATTO', url: '/contatto'},
+];
+
+const navLinksEn = [
+    {id: 1, name: 'HOME', url: '/'},
+    {id: 2, name: 'ABOUT US', url: '/about-us'},
+    {id: 3, name: 'SERVICES', url: '/services'},
+    {id: 4, name: 'PROFESSIONALS', url: '/professionals'},
+    {id: 5, name: 'CONTACT US', url: '/contact-us'},
+]
+
+const navigationItems = props => {
+    let menuContent;
+    if (props.languageType == 'es') {
+        menuContent = (
+            <ul className="NavigationItems">
+                {navLinks.map(item => (
+                    <NavItem 
+                        key={item.id}
+                        link={item.url} 
+                        exact>{item.name}</NavItem>
+                ))}
+            </ul>
+        );
+    } else if (props.languageType == 'it') {
+        menuContent = (
+            <ul className="NavigationItems">
+                {navLinksIt.map(item => (
+                    <NavItem 
+                        key={item.id}
+                        link={item.url} 
+                        exact>{item.name}</NavItem>
+                ))}
+            </ul>
+        );
+    } else {
+        menuContent = (
+            <ul className="NavigationItems">
+                {navLinksEn.map(item => (
+                    <NavItem 
+                        key={item.id}
+                        link={item.url} 
+                        exact>{item.name}</NavItem>
+                ))}
+            </ul>
+        );
+    }
+    return menuContent;
+};
 
 export default navigationItems;

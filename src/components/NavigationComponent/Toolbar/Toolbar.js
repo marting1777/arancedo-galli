@@ -5,7 +5,6 @@ import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle'
 
-
 const toolbar = props => (
     <header className="Toolbar">
         <div>
@@ -13,7 +12,7 @@ const toolbar = props => (
         </div>
         <DrawerToggle clicked={props.drawerToggleClicked}/>
         <nav className="DesktopOnly">
-            <NavigationItems />
+            <NavigationItems languageType={props.languageTypeSel} />
         </nav>
     </header>
 );
