@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './QuienesSomos.scss';
 
 import Banner from '../../components/UI/Banner/Banner';
 import CopyText from '../../components/UI/CopyText/CopyText';

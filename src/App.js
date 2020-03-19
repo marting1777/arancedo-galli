@@ -18,11 +18,61 @@ import QuienesSomosIT from './containers/QuienesSomosIT/QuienesSomosIT';
 import ProfesionalesIT from './containers/ProfesionalesIT/ProfesionalesIT';
 import ContactoIT from './containers/ContactoIT/ContactoIT';
 import ServicesIT from './containers/ServicesIT/ServicesIT';
+import ScrollToTop from './HOC/ScrollToTop/ScrollToTop';
+
+import HomeEN from './containers/HomeEN/HomeEN';
+import ContactoEN from './containers/ContactoEN/ContactoEN';
+import ProfesionalesEN from './containers/ProfesionalesEN/ProfesionalesEN';
+import QuienesSomosEN from './containers/QuienesSomosEN/QuienesSomosEN';
+import ServicesEN from './containers/ServicesEN/ServicesEN';
+
 
 const App = props => {
 
     const [language, setLanguage] = useState('es');
     const changeLanguageHandler = event => setLanguage(event.target.value);
+
+    let spanish, italian, english;
+    if (language === 'es') {
+        spanish = (
+            <>
+                <ScrollToTop />
+                <Switch>
+                    <Route path="/contact-us" exact component={Contacto}/>
+                    <Route path="/professionals" exact component={Profesionales}/>
+                    <Route path="/services" exact component={Services}/>
+                    <Route path="/about-us" exact component={QuienesSomos}/>
+                    <Route path="/" exact component={Home}/>
+                </Switch>
+            </>
+        );
+    } else if (language === 'it') {
+        italian = (
+            <>
+                <ScrollToTop />
+                <Switch>
+                    <Route path="/contact-us" exact component={ContactoIT}/>
+                    <Route path="/professionals" exact component={ProfesionalesIT}/>
+                    <Route path="/services" exact component={ServicesIT}/>
+                    <Route path="/about-us" exact component={QuienesSomosIT}/>
+                    <Route path="/" exact component={HomeIT}/>
+                </Switch>
+            </>
+        );
+    } else {
+        english = (
+            <>
+                <ScrollToTop />
+                <Switch>
+                    <Route path="/contact-us" exact component={ContactoEN}/>
+                    <Route path="/professionals" exact component={ProfesionalesEN}/>
+                    <Route path="/services" exact component={ServicesEN}/>
+                    <Route path="/about-us" exact component={QuienesSomosEN}/>
+                    <Route path="/" exact component={HomeEN}/>
+                </Switch>
+            </>
+        );
+    }
 
     return (
         <div className="App">
@@ -30,19 +80,10 @@ const App = props => {
                 changeLanguageHandler={changeLanguageHandler} 
                 languageRol={language} 
                 languageRolFooter={language}>
-                <Switch>
-                    <Route path="/contacto" exact component={Contacto}/>
-                    <Route path="/profesionales" exact component={Profesionales}/>
-                    <Route path="/servicios" exact component={Services}/>
-                    <Route path="/quienes-somos" exact component={QuienesSomos}/>
-
-                    <Route path="/contatto" exact component={ContactoIT}/>
-                    <Route path="/la-nostra-gente" exact component={ProfesionalesIT}/>
-                    <Route path="/servizi-legali" exact component={ServicesIT}/>
-                    <Route path="/la-nostra-firma" exact component={QuienesSomosIT}/>
-
-                    <Route path="/" exact component={language === 'es' ? Home : HomeIT}/>
-                </Switch>
+                
+                {language === 'es' && spanish}
+                {language === 'it' && italian}
+                {language === 'en' && english}
             </Layout>
         </div>
     );

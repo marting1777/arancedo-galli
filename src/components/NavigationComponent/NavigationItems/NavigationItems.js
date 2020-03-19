@@ -4,18 +4,18 @@ import NavItem from './NavItem/NavItem';
 
 const navLinks = [
     {id: 1, name: 'HOME', url: '/'},
-    {id: 2, name: 'QUIENES SOMOS', url: '/quienes-somos'},
-    {id: 3, name: 'SERVICIOS', url: '/servicios'},
-    {id: 4, name: 'PROFESIONALES', url: '/profesionales'},
-    {id: 5, name: 'CONTACTO', url: '/contacto'},
+    {id: 2, name: 'QUIENES SOMOS', url: '/about-us'},
+    {id: 3, name: 'SERVICIOS', url: '/services'},
+    {id: 4, name: 'PROFESIONALES', url: '/professionals'},
+    {id: 5, name: 'CONTACTO', url: '/contact-us'},
 ];
 
 const navLinksIt = [
     {id: 1, name: 'HOME', url: '/'},
-    {id: 2, name: 'LA NOSTRA FIRMA', url: '/la-nostra-firma'},
-    {id: 3, name: 'SERVIZI LEGALI', url: '/servizi-legali'},
-    {id: 4, name: 'LA NOSTRA GENTE', url: '/la-nostra-gente'},
-    {id: 5, name: 'CONTATTO', url: '/contatto'},
+    {id: 2, name: 'LA NOSTRA FIRMA', url: '/about-us'},
+    {id: 3, name: 'SERVIZI LEGALI', url: '/services'},
+    {id: 4, name: 'LA NOSTRA GENTE', url: '/professionals'},
+    {id: 5, name: 'CONTATTO', url: '/contact-us'},
 ];
 
 const navLinksEn = [

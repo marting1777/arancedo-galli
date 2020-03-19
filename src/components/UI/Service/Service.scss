@@ -1,0 +1,9 @@
+.practice-area {
+    text-align: left;
+}
+
+@media (min-width: 1024px) {
+    .practice-area {
+        height: 405px;
+    }
+}

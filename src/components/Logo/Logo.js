@@ -1,9 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Logo.scss';
 
 const logo = props => (
     <div className={props.logoClass}>
-        <p>ARANCEDO - GALLI</p>
+        <NavLink className="LogoLink" to="/"><p>ARANCEDO - GALLI</p></NavLink>
     </div>
 );
 

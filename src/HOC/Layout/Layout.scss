@@ -2,6 +2,23 @@
     margin-top: 70px;
 }
 
+.selectpicker {
+    position: fixed;
+    right: 0;
+    background: #660000;
+    z-index: 100;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.selectpicker:focus {
+    outline: #f85b0a auto 1px;
+    border: none;
+}
+
 @media (min-width: 1200px) {
     .Content {
         margin-top: 100px;
