@@ -1,9 +1,10 @@
-.practice-area {
-    text-align: left;
+.practice-area-int {
+    text-align: center;
 }
 
 @media (min-width: 1024px) {
-    .practice-area {
+    .practice-area-int {
         height: 405px;
+        text-align: left;
     }
 }
