@@ -46,7 +46,7 @@ const Footer = props => {
                             <h2 className="ftco-heading-2">{langText.areas}</h2>
                             <ul className="list-unstyled">
                                 {langText && langText.areaList.map(area => (
-                                    <li key={area.id}><NavLink to="/servicios" className="py-1 d-block"> > {area.name}</NavLink></li>
+                                    <li key={area.id}><NavLink to="/services" className="py-1 d-block"> > {area.name}</NavLink></li>
                                 ))}
                             </ul>
                         </div>
