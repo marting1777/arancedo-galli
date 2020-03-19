@@ -34,6 +34,7 @@ const Layout = props => {
                 languageTypeSel={props.languageRol}
                 drawerToggleClicked={sideDrawerToggleHandler}/>
             <SideDrawer 
+                languageSel={props.languageRol}
                 closed={sideDrawerClosedHandler} 
                 open={showSideDrawer}/>
             <main className="Content">

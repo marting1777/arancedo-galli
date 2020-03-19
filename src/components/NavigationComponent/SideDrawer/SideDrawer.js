@@ -21,7 +21,7 @@ const sideDrawer = props => {
                     <Logo />
                 </div>
                 <nav>
-                    <NavigationItems />
+                    <NavigationItems languageType={props.languageSel}/>
                 </nav>
             </div>
         </>
