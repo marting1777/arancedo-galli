@@ -12,7 +12,7 @@ class ProfesionalesIT extends Component {
 
     state = {
         bannerContent: {
-            title: 'I Professionisti',
+            title: 'La Nostra Gente',
             backImage: BannerBackground,
         },
         lawyersArea: 'I Nostri Avvocati',

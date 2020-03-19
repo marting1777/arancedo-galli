@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.scss';
+import './HomeIT.scss';
 import HeroBanner from '../../components/UI/HeroBanner/HeroBanner';
 import ServiceCard from '../../components/UI/ServiceCard/ServiceCard';
 import PracticeArea from '../../components/UI/PracticeArea/PracticeArea';
@@ -13,24 +13,24 @@ import PabloArancedo from '../../assets/images/derecho-comercial.jpg';
 import MartinPereda from '../../assets/images/mercado-de-capitales.jpg'; 
 import LizaParreta from '../../assets/images/recupero-de-creditos.jpg';
 
-class Home extends Component {
+class HomeIT extends Component {
 
     state = {
         content: {
             cards: [
-                {id: 1, title: 'Asesoramiento legal', text: 'Brindamos la información jurídica a quien necesite de ello para la resolución de asuntos que tienen que ver con la aplicación de las leyes, normativas y reglamentos en cualquier materia del Derecho.', icon: 'flaticon-auction'},
-                {id: 2, title: 'Abogados expertos', text: 'Integrado por distintos profesionales con sólidos conocimientos y experiencia en Derecho Público y en Derecho Privado.', icon: 'flaticon-lawyer'},
-                {id: 3, title: 'Respuesta inmediata', text: 'Estructura competitiva que permite brindar una inmediata respuesta a las necesidades y problemas confiados por nuestros clientes.', icon: 'flaticon-money'},
+                {id: 1, title: 'Consulenza Legale', text: 'Forniamo informazioni legali a coloro che ne hanno bisogno per la risoluzione di questioni che riguardano l\'applicazione di leggi, norme e regolamenti in qualsiasi questione di legge.', icon: 'flaticon-auction'},
+                {id: 2, title: 'Avvocati Esperti', text: 'Composto da diversi professionisti con solida conoscenza ed esperienza in diritto pubblico e diritto privato.', icon: 'flaticon-lawyer'},
+                {id: 3, title: 'Risposta Immediata', text: 'Struttura competitiva che ci consente di fornire una risposta immediata alle esigenze e ai problemi affidati dai nostri clienti.', icon: 'flaticon-money'},
             ],
             practiceAreas: [
-                {id: 4, title: 'Derecho Público y Regulación Económica', icon: 'flaticon-money'},
-                {id: 5, title: 'Derecho Civil', icon: 'flaticon-money'},
-                {id: 6, title: 'Derecho Comercial y Societario', icon: 'flaticon-money'},
-                {id: 7, title: 'Mercado de Capitales', icon: 'flaticon-money'},
-                {id: 8, title: 'Recupero de créditos bancarios y de compañía aseguradoras', icon: 'flaticon-money'},
+                {id: 4, title: 'Diritto Pubblico e Regolazione Economica', icon: 'flaticon-money'},
+                {id: 5, title: 'Diritto Civile', icon: 'flaticon-money'},
+                {id: 6, title: 'Diritto Commerciale e Societario', icon: 'flaticon-money'},
+                {id: 7, title: 'Mercato di Capitali', icon: 'flaticon-money'},
+                {id: 8, title: 'Recupero di crediti bancari e di compagnie di assicurazione', icon: 'flaticon-money'},
             ],
-            practiceSectionTitle: 'Servicios Legales',
-            lawyersArea: 'Nuestros Abogados',
+            practiceSectionTitle: 'Servizi Legali',
+            lawyersArea: 'La Nostra Gente',
             lawyers: [
                 {id: 9, name: 'Gilberto Galli', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', imageUrl: GilbertoGalli},
                 {id: 10, name: 'Pablo Arancedo', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', imageUrl: PabloArancedo},
@@ -80,11 +80,11 @@ class Home extends Component {
         return (
             <>
                 <HeroBanner 
-                    hereForYou={'Estamos acá para ayudarte!'}
-                    firstWord={'Experiencia'}
-                    secondWord={'Innovación'}
-                    thirdWord={'Excelencia'}
-                    contactButton={'Contactános'}/>
+                    hereForYou={'Siamo qui per aiutarti!'}
+                    firstWord={'Esperienza'}
+                    secondWord={'Innovazione'}
+                    thirdWord={'Eccellenza'}
+                    contactButton={'Contattaci'}/>
                 <section className="ftco-section ftco-no-pb services-section">
                     <div className="container">
                         <div className="row no-gutters d-flex">
@@ -117,12 +117,12 @@ class Home extends Component {
                     </div>
                 </section>
                 <Form
-                    formContactenos={'Contáctenos'} 
-                    formNombreYApellido={'Nombre y Apellido'}
-                    formMail={'Email'}
-                    formAsunto={'Asunto'}
-                    formMensaje={'Mensaje'}
-                    formEnviar={'Enviar Mensaje'}
+                    formContactenos={'Contattaci'} 
+                    formNombreYApellido={'Nome e cognome'}
+                    formMail={'E-mail'}
+                    formAsunto={'Affari'}
+                    formMensaje={'Messaggio'}
+                    formEnviar={'Invia Messaggio'}
                     />
                 <section className="ftco-gallery">
                     <div className="container-wrap">
@@ -132,13 +132,13 @@ class Home extends Component {
                     </div>
                 </section>
                 <Newsletter 
-                    titleNewsletter={'Suscribite a nuestro Newsletter'}
+                    titleNewsletter={'Iscriviti alla nostra Newsletter'}
                     subtitleNewsletter={'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in'}
-                    placeholderNewsletter={'Ingresa tu email'}
-                    valueNewsletter={'Suscribite'}/>
+                    placeholderNewsletter={'Inserisci la tua email'}
+                    valueNewsletter={'Abbonarsi'}/>
             </>
         );
     };
 }
 
-export default Home;
+export default HomeIT;

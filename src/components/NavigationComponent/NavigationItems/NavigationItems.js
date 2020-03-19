@@ -12,9 +12,9 @@ const navLinks = [
 
 const navLinksIt = [
     {id: 1, name: 'HOME', url: '/'},
-    {id: 2, name: 'CHI SIAMO', url: '/chi-siamo'},
-    {id: 3, name: 'SERVIZI', url: '/servizi'},
-    {id: 4, name: 'I PROFESSIONISTI', url: '/i-professionisti'},
+    {id: 2, name: 'LA NOSTRA FIRMA', url: '/la-nostra-firma'},
+    {id: 3, name: 'SERVIZI LEGALI', url: '/servizi-legali'},
+    {id: 4, name: 'LA NOSTRA GENTE', url: '/la-nostra-gente'},
     {id: 5, name: 'CONTATTO', url: '/contatto'},
 ];
 
@@ -28,7 +28,7 @@ const navLinksEn = [
 
 const navigationItems = props => {
     let menuContent;
-    if (props.languageType == 'es') {
+    if (props.languageType === 'es') {
         menuContent = (
             <ul className="NavigationItems">
                 {navLinks.map(item => (
@@ -39,7 +39,7 @@ const navigationItems = props => {
                 ))}
             </ul>
         );
-    } else if (props.languageType == 'it') {
+    } else if (props.languageType === 'it') {
         menuContent = (
             <ul className="NavigationItems">
                 {navLinksIt.map(item => (

@@ -14,22 +14,22 @@ const form = props => (
     				</div>
     			</div>
     			<div className="half p-3 p-md-5 ftco-animated">
-    				<h3 className="mb-4">Contáctenos</h3>
+                    <h3 className="mb-4">{props.formContactenos}</h3>
     				<form action="#">
                         <div className="form-group">
-                            <input type="text" className="form-control" placeholder="Nombre y Apellido" />
+                            <input type="text" className="form-control" placeholder={props.formNombreYApellido} />
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control" placeholder="Email" />
+                            <input type="text" className="form-control" placeholder={props.formMail} />
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control" placeholder="Asunto" />
+                            <input type="text" className="form-control" placeholder={props.formAsunto} />
                         </div>
                         <div className="form-group">
-                            <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>
+                            <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder={props.formMensaje}></textarea>
                         </div>
                         <div className="form-group">
-                            <input type="submit" value="Enviar Mensaje" className="btn btn-primary" />
+                            <input type="submit" value={props.formEnviar} className="btn btn-primary" />
                         </div>
                     </form>
     			</div>

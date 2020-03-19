@@ -11,14 +11,25 @@ import Home from './containers/Home/Home';
 import QuienesSomos from './containers/QuienesSomos/QuienesSomos';
 import Services from './containers/Services/Services';
 import Profesionales from './containers/Profesionales/Profesionales';
-import ProfesionalesIT from './containers/ProfesionalesIT/ProfesionalesIT';
 import Contacto from './containers/Contacto/Contacto';
+
+import HomeIT from './containers/HomeIT/HomeIT';
+import QuienesSomosIT from './containers/QuienesSomosIT/QuienesSomosIT';
+import ProfesionalesIT from './containers/ProfesionalesIT/ProfesionalesIT';
 import ContactoIT from './containers/ContactoIT/ContactoIT';
+import ServicesIT from './containers/ServicesIT/ServicesIT';
 
 const App = props => {
+
+    const [language, setLanguage] = useState('es');
+    const changeLanguageHandler = event => setLanguage(event.target.value);
+
     return (
         <div className="App">
-            <Layout>
+            <Layout 
+                changeLanguageHandler={changeLanguageHandler} 
+                languageRol={language} 
+                languageRolFooter={language}>
                 <Switch>
                     <Route path="/contacto" exact component={Contacto}/>
                     <Route path="/profesionales" exact component={Profesionales}/>
@@ -26,13 +37,11 @@ const App = props => {
                     <Route path="/quienes-somos" exact component={QuienesSomos}/>
 
                     <Route path="/contatto" exact component={ContactoIT}/>
-                    <Route path="/i-professionisti" exact component={ProfesionalesIT}/>
-                    <Route path="/servizi" exact component={Services}/>
-                    <Route path="/chi-siamo" exact component={QuienesSomos}/>
+                    <Route path="/la-nostra-gente" exact component={ProfesionalesIT}/>
+                    <Route path="/servizi-legali" exact component={ServicesIT}/>
+                    <Route path="/la-nostra-firma" exact component={QuienesSomosIT}/>
 
-                    <Route path="/home-it" exact component={Home}/>
-                    <Route path="/home" exact component={Home}/>
-                    <Route path="/" exact component={Home}/>
+                    <Route path="/" exact component={language === 'es' ? Home : HomeIT}/>
                 </Switch>
             </Layout>
         </div>

@@ -3,27 +3,27 @@ import { NavLink } from 'react-router-dom';
 
 const date = new Date();
 
-const Footer = props => {
+const FooterIT = props => {
 
     const [langText] = useState({
         title: 'Arancedo - Galli',
-        subtitle: 'Arancedo - Galli abogados es una firma enfocada en asuntos internacionales y domésticos.',
-        areas: 'Practice Areas',
+        subtitle: 'Arancedo - Galli abogados è una società focalizzata sugli affari internazionali e nazionali.',
+        areas: 'Aree di pratica',
         areaList: [
-            {id: 1, name: 'Derecho Público'},
-            {id: 2, name: 'Derecho Civil'},
-            {id: 3, name: 'Derecho Comercial y Societario'},
-            {id: 4, name: 'Mercado de Capitales'},
-            {id: 5, name: 'Recupero de créditos bancarios'},
+            {id: 1, name: 'Diritto Pubblico'},
+            {id: 2, name: 'Diritto Civile'},
+            {id: 3, name: 'Diritto Commerciale e Societario'},
+            {id: 4, name: 'Mercato di Capitali'},
+            {id: 5, name: 'Recupero di crediti bancari'},
         ],
-        hours: 'Horarios Laborales',
-        days: 'Lunes – Viernes',
+        hours: 'Orario di lavoro',
+        days: 'Lunedì - Venerdì',
         time: '9 am - 20 pm',
-        questions: 'Alguna Pregunta?',
+        questions: 'Domande?',
         address: 'Marcelo T. de Alvear 636 piso 9°',
         phone: '+54 11 4311 7999',
         mail: 'info@arancedogalli.com.ar',
-        rights: 'Todos los derechos reservados.',
+        rights: 'Tutti i diritti riservati.',
     });
 
     return (
@@ -46,7 +46,7 @@ const Footer = props => {
                             <h2 className="ftco-heading-2">{langText.areas}</h2>
                             <ul className="list-unstyled">
                                 {langText && langText.areaList.map(area => (
-                                    <li key={area.id}><NavLink to="/servicios" className="py-1 d-block"> > {area.name}</NavLink></li>
+                                    <li key={area.id}><NavLink to="/servizi-legali" className="py-1 d-block"> > {area.name}</NavLink></li>
                                 ))}
                             </ul>
                         </div>
@@ -84,4 +84,4 @@ const Footer = props => {
     );
 };
 
-export default Footer;
+export default FooterIT;
